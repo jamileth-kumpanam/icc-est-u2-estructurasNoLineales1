@@ -1,11 +1,16 @@
+import java.util.ArrayList;
+
 import structures.IntTree;
+import structures.graphs.Graph;
 import structures.models.Persona;
+import structures.nodes.Node;
 import structures.trees.Tree;
 
 public class App {
     public static void main(String[] args) {
         // runIntTree();
-        runTree();
+        // runTree();
+        runGraph();
 
     }
 
@@ -47,4 +52,22 @@ public static void runTree(){
     }
 }
 
+public static void runGraph() {
+
+    Graph<String> graph = new Graph<>(new ArrayList<>());
+
+    Node<String> nA = new Node<>("A");
+    Node<String> nB = new Node<>("B");
+    Node<String> nC = new Node<>("C");
+    Node<String> nD = new Node<>("D");
+
+    graph.addNode(nA);
+
+    graph.addEdge(nA, nB);
+    graph.addEdge(nA, nC);
+    graph.addEdge(nB, nD);
+    graph.addEdge(nC, nD);
+
+    graph.printGraph();
+}
 }

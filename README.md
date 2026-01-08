@@ -107,5 +107,38 @@ Captura del resultado de la busqueda en consola de una persona por edad.
 
 ![alt text](image-3.png)
 
+# Práctica 3: Práctica de Graphs
+
+## Autor
+- Nombre: Jamileth Kumpanam
+- Carrera/Curso: ESTRUCTURA DE DATOS GRUPO - 1 - COMPUTACIÓN
+
+
+##  Nombre de la práctica - Fecha
+- Práctica: Práctica de Graphs
+- Fecha: 2026-08-06
+
+## Descripción
+Implementar un Grafo  en Java usando:
+
+Node<T>
+Graph<T>
+### Requisitos técnicos
+Implementar la clase genérica:
+
+class Graph<T>
+Implementar la clase:
+
+class Node<T>
+ 
+Implementaciones obligatorias
+Implementación con objetos StringI
+
+## Evidencias
+### Captura 1
+![alt text](image-4.png)
+
+### Captura 2 
+![alt text](image-5.png)
 
 
