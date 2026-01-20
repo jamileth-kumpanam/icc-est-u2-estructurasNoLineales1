@@ -10,8 +10,31 @@ public class App {
     public static void main(String[] args) {
         // runIntTree();
         // runTree();
-        runGraph();
+        // runGraph();
+        runGraphRecorridos();
+    }
 
+    private static void runGraphRecorridos(){
+        Graph <Persona> grafo = new Graph<>(new ArrayList<>());
+        Persona pC23 = new Persona("Carlos", 23);
+        Persona pL18 = new Persona("Luis", 18);
+        Persona pA23 = new Persona("Ana", 23);
+        Persona pA30 = new Persona("Ana", 30);
+        Persona pJ25 = new Persona("Juan", 25);
+        Persona pAn20 = new Persona("Andres", 23);
+
+        grafo.addEdge(new Node<>(pC23), new Node<>(pA30));
+        grafo.addConocido(pC23, pL18);
+        grafo.addConocido(pA30, pJ25);
+        grafo.addConocido(pA30, pAn20);
+
+        grafo.printGraph();
+
+        System.out.println("\nRecorrido BFS: ");
+        grafo.bfs(new Node<>(pC23));
+
+        System.out.println("\nRecorrido DFS: ");
+        grafo.dfs(new Node<>(pC23));
     }
 
     public static void runIntTree(){

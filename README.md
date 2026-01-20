@@ -141,4 +141,7 @@ Implementación con objetos StringI
 ### Captura 2 
 ![alt text](image-5.png)
 
+### Captura 3
+![alt text](image-6.png)
+
 
